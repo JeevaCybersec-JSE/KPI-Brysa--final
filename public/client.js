@@ -3387,8 +3387,8 @@
                     fillPct = Math.min(100, Math.max(0, (v / (2 * tgt)) * 100));
                   }
 
-                  return '<button type="button" class="perf-row" data-open="' + r.r + '" style="grid-template-columns:minmax(0, 1.2fr) minmax(48px, 1fr) minmax(46px, auto) 88px;gap:6px;padding:6px 4px" title="View ' + r.name + '">' +
-                    '<div class="perf-metric-name"><b style="font-size:12.5px">' + item.disp + '</b><small>' + tgtLabel + '</small></div>' +
+                  return '<button type="button" class="perf-row" data-open="' + r.r + '" style="grid-template-columns:minmax(160px, 34%) minmax(48px, 1fr) minmax(46px, auto) 88px;gap:8px;padding:8px 8px;min-height:48px;align-items:center;" title="View ' + r.name + '">' +
+                    '<div class="perf-metric-name"><b style="font-size:12.5px;white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.3">' + item.disp + '</b><small style="white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.25">' + tgtLabel + '</small></div>' +
                     '<div class="perf-gauge" style="height:7px">' +
                       (hasVal ? '<div class="perf-gauge-fill ' + pillCls + '" style="width:' + fillPct.toFixed(1) + '%"></div>' : '') +
                       '<div class="perf-gauge-target" style="left:50%"></div>' +

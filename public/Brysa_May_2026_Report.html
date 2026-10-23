@@ -1957,22 +1957,25 @@ button.exec-kpi-card:hover {
 
 .perf-domain-cols {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(100px, 1.1fr) 56px 104px;
+  grid-template-columns: minmax(170px, 34%) minmax(0, 1fr) 56px 108px;
   column-gap: 12px;
+  align-items: center;
   font-size: 10.5px;
   font-weight: 600;
   color: var(--muted, #64748b);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 4px 8px 8px 8px;
+  padding: 4px 10px 8px 10px;
 }
 
 .perf-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(100px, 1.1fr) 56px 104px;
+  grid-template-columns: minmax(170px, 34%) minmax(0, 1fr) 56px 108px;
   column-gap: 12px;
   align-items: center;
-  padding: 9px 8px;
+  min-height: 52px;
+  height: auto;
+  padding: 10px 10px;
   border-radius: 6px;
   border: 0;
   background: none;
@@ -1994,22 +1997,31 @@ button.exec-kpi-card:hover {
 .perf-metric-name {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-width: 0;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .perf-metric-name b {
   font-size: 13.5px;
   font-weight: 600;
   color: var(--ink, #1e293b);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-height: 1.3;
 }
 
 .perf-metric-name small {
   font-size: 11.5px;
   color: var(--muted, #64748b);
-  margin-top: 1px;
+  margin-top: 2px;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-height: 1.25;
 }
 
 .perf-gauge {
@@ -3827,8 +3839,20 @@ table.mini {
   background: rgba(255, 255, 255, 0.03) !important;
 }
 
+.perf-domain-cols {
+  grid-template-columns: minmax(170px, 34%) minmax(0, 1fr) 56px 108px !important;
+  column-gap: 12px !important;
+  align-items: center !important;
+  padding: 4px 10px 8px 10px !important;
+}
+
 .perf-row {
-  padding: 14px 10px !important;
+  grid-template-columns: minmax(170px, 34%) minmax(0, 1fr) 56px 108px !important;
+  column-gap: 12px !important;
+  align-items: center !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 10px 10px !important;
   margin: 2px 0 !important;
   border-radius: 8px !important;
   transition: background 0.15s ease !important;
@@ -3836,6 +3860,40 @@ table.mini {
 
 .perf-row:hover {
   background: rgba(37, 99, 235, 0.04) !important;
+}
+
+.perf-metric-name {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  min-width: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  overflow: visible !important;
+}
+
+.perf-metric-name b {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: var(--ink, #1e293b) !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+  line-height: 1.3 !important;
+}
+
+.perf-metric-name small {
+  font-size: 11.5px !important;
+  color: var(--muted, #64748b) !important;
+  margin-top: 2px !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  overflow: visible !important;
+  line-height: 1.25 !important;
 }
 
 .perf-gauge {
@@ -6483,15 +6541,17 @@ button.vuln-chip:hover {
 
 .glowing-capsule-item {
   display: grid !important;
-  grid-template-columns: 24px 180px 1fr 60px !important;
+  grid-template-columns: 24px minmax(180px, 32%) 1fr 60px !important;
   align-items: center !important;
+  min-height: 48px !important;
+  height: auto !important;
   gap: 14px !important;
   width: 100% !important;
 }
 
 @media (max-width: 900px) {
   .glowing-capsule-item {
-    grid-template-columns: 20px 130px 1fr 50px !important;
+    grid-template-columns: 20px minmax(140px, 32%) 1fr 50px !important;
     gap: 10px !important;
   }
 }
@@ -6507,17 +6567,22 @@ button.vuln-chip:hover {
 .capsule-label-wrap {
   display: flex !important;
   flex-direction: column !important;
+  justify-content: center !important;
   gap: 2px !important;
   min-width: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
 }
 
 .capsule-label-text {
   font-size: 13px !important;
   font-weight: 700 !important;
   color: var(--tx-heading, #0f172a) !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.3 !important;
 }
 
 [data-theme="dark"] .capsule-label-text {
@@ -14298,8 +14363,8 @@ window.__STATIC_CLIENT_DATA__ = {"success":true,"clientName":"Brysa","share":nul
                     fillPct = Math.min(100, Math.max(0, (v / (2 * tgt)) * 100));
                   }
 
-                  return '<button type="button" class="perf-row" data-open="' + r.r + '" style="grid-template-columns:minmax(0, 1.2fr) minmax(48px, 1fr) minmax(46px, auto) 88px;gap:6px;padding:6px 4px" title="View ' + r.name + '">' +
-                    '<div class="perf-metric-name"><b style="font-size:12.5px">' + item.disp + '</b><small>' + tgtLabel + '</small></div>' +
+                  return '<button type="button" class="perf-row" data-open="' + r.r + '" style="grid-template-columns:minmax(160px, 34%) minmax(48px, 1fr) minmax(46px, auto) 88px;gap:8px;padding:8px 8px;min-height:48px;align-items:center;" title="View ' + r.name + '">' +
+                    '<div class="perf-metric-name"><b style="font-size:12.5px;white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.3">' + item.disp + '</b><small style="white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.25">' + tgtLabel + '</small></div>' +
                     '<div class="perf-gauge" style="height:7px">' +
                       (hasVal ? '<div class="perf-gauge-fill ' + pillCls + '" style="width:' + fillPct.toFixed(1) + '%"></div>' : '') +
                       '<div class="perf-gauge-target" style="left:50%"></div>' +
