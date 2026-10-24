@@ -2910,39 +2910,64 @@
     "2026-10": {
       "metrics": {
         "managed_endpoints": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 41
+          },
+          "computed": 41,
+          "rag": null,
+          "history": []
         },
         "mobile_devices": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "a": 39,
+            "b": null,
+            "choice": "vpn_only"
+          },
+          "computed": 39,
+          "rag": null,
+          "history": []
         },
         "new_endpoints": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "removed_endpoints": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "devices_not_reporting": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "endpoint_protection_coverage_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 41,
+            "den": 41
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "patch_compliance_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 41,
+            "den": 41
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "critical_patches_outstanding": {
           "inputs": {},
@@ -2970,44 +2995,69 @@
           "rag": null
         },
         "threats_blocked": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "malware_detections": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "ransomware_detections": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": "green",
+          "history": []
         },
         "policy_violations": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "devices_outdated_protection": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "devices_outdated_protection_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 0,
+            "den": 41
+          },
+          "computed": 0,
+          "rag": "green",
+          "history": []
         },
         "security_incidents_raised": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "p1_security_incidents": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": "green",
+          "history": []
         },
         "mttd_hours": {
           "inputs": {},
@@ -3020,14 +3070,52 @@
           "rag": null
         },
         "critical_vulns_open": {
-          "inputs": {},
+          "inputs": {
+            "value": null
+          },
           "computed": null,
-          "rag": null
+          "rag": null,
+          "history": [
+            {
+              "timestamp": "2026-10-24T04:31:04.666Z",
+              "action": "update",
+              "user": "Jeeva",
+              "inputs": {
+                "value": 18
+              },
+              "computed": 18,
+              "rag": "red"
+            },
+            {
+              "timestamp": "2026-10-24T04:30:55.418Z",
+              "action": "update",
+              "user": "Jeeva",
+              "inputs": {
+                "value": 117
+              },
+              "computed": 117,
+              "rag": "red"
+            }
+          ]
         },
         "high_vulns_open": {
-          "inputs": {},
+          "inputs": {
+            "value": null
+          },
           "computed": null,
-          "rag": null
+          "rag": null,
+          "history": [
+            {
+              "timestamp": "2026-10-24T04:31:08.275Z",
+              "action": "update",
+              "user": "Jeeva",
+              "inputs": {
+                "value": 1141
+              },
+              "computed": 1141,
+              "rag": "red"
+            }
+          ]
         },
         "medium_vulns_open": {
           "inputs": {},
@@ -3060,104 +3148,163 @@
           "rag": null
         },
         "mfa_coverage_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 40,
+            "den": 40
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "risky_sign_ins": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "user_reported_phishing": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "support_requests": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 8
+          },
+          "computed": 8,
+          "rag": null,
+          "history": []
         },
         "incidents_resolved": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 8
+          },
+          "computed": 8,
+          "rag": null,
+          "history": []
         },
         "first_time_fix_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 8,
+            "den": 8
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "reopened_incidents": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "open_ticket_backlog": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "p1_response_sla_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 3,
+            "den": 3
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "p2_response_sla_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 4,
+            "den": 4
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "resolution_sla_pct": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "num": 8,
+            "den": 8
+          },
+          "computed": 100,
+          "rag": "green",
+          "history": []
         },
         "onboarding_completed": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 2
+          },
+          "computed": 2,
+          "rag": null,
+          "history": []
         },
         "offboarding_completed": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 1
+          },
+          "computed": 1,
+          "rag": null,
+          "history": []
         },
         "iso_evidence_completed": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "config_changes": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "security_recommendations_raised": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "recommendations_completed": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": null,
+          "history": []
         },
         "policy_exceptions_open": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 0
+          },
+          "computed": 0,
+          "rag": "green",
+          "history": []
         },
         "devices_not_reporting_pct": {
           "inputs": {
-            "num": null,
-            "den": null,
-            "devices_not_reporting": null,
-            "managed_endpoints": null
+            "num": 0,
+            "den": 41,
+            "devices_not_reporting": 0,
+            "managed_endpoints": 41
           },
-          "computed": null,
-          "rag": null
+          "computed": 0,
+          "rag": "green"
         },
         "patch_deployment_success_rate_pct": {
           "inputs": {},
@@ -3715,5 +3862,5 @@
       }
     }
   },
-  "lastUpdated": "2026-10-21T13:07:15.221Z"
+  "lastUpdated": "2026-10-24T04:32:54.203Z"
 }
