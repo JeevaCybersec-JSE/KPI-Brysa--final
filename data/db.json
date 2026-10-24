@@ -2970,29 +2970,45 @@
           "history": []
         },
         "critical_patches_outstanding": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 6
+          },
+          "computed": 6,
+          "rag": "red",
+          "history": []
         },
         "high_patches_outstanding": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 13
+          },
+          "computed": 13,
+          "rag": "red",
+          "history": []
         },
         "failed_patch_deployments": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 2
+          },
+          "computed": 2,
+          "rag": null,
+          "history": []
         },
         "successful_patch_deployments": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 25
+          },
+          "computed": 25,
+          "rag": null,
+          "history": []
         },
         "avg_days_to_critical_patch": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "total": 72,
+            "count": 9
+          },
+          "computed": 8,
+          "rag": "red",
+          "history": []
         },
         "threats_blocked": {
           "inputs": {
@@ -3071,10 +3087,10 @@
         },
         "critical_vulns_open": {
           "inputs": {
-            "value": null
+            "value": 41
           },
-          "computed": null,
-          "rag": null,
+          "computed": 41,
+          "rag": "red",
           "history": [
             {
               "timestamp": "2026-10-24T04:31:04.666Z",
@@ -3100,10 +3116,10 @@
         },
         "high_vulns_open": {
           "inputs": {
-            "value": null
+            "value": 31
           },
-          "computed": null,
-          "rag": null,
+          "computed": 31,
+          "rag": "red",
           "history": [
             {
               "timestamp": "2026-10-24T04:31:08.275Z",
@@ -3118,9 +3134,12 @@
           ]
         },
         "medium_vulns_open": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 10
+          },
+          "computed": 10,
+          "rag": null,
+          "history": []
         },
         "vulns_remediated": {
           "inputs": {},
@@ -3133,19 +3152,28 @@
           "rag": null
         },
         "open_gt30_sla": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 42
+          },
+          "computed": 42,
+          "rag": "red",
+          "history": []
         },
         "open_gt60_sla": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 34
+          },
+          "computed": 34,
+          "rag": "red",
+          "history": []
         },
         "open_gt90_sla": {
-          "inputs": {},
-          "computed": null,
-          "rag": null
+          "inputs": {
+            "value": 29
+          },
+          "computed": 29,
+          "rag": "red",
+          "history": []
         },
         "mfa_coverage_pct": {
           "inputs": {
@@ -3308,8 +3336,8 @@
         },
         "patch_deployment_success_rate_pct": {
           "inputs": {},
-          "computed": null,
-          "rag": null
+          "computed": 92.59,
+          "rag": "amber"
         },
         "recommendations_completion_pct": {
           "inputs": {},
@@ -3862,5 +3890,5 @@
       }
     }
   },
-  "lastUpdated": "2026-10-24T04:32:54.203Z"
+  "lastUpdated": "2026-10-24T06:31:31.966Z"
 }
